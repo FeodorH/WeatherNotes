@@ -1,7 +1,19 @@
+Architecture tree:
 ```mermaid
-        graph TD
-            M[Modules] --> app[app], core[core], features[features], d[data];
-            core --> common[common], db[database], net[network], domain[domain];
-            features --> w[weather], n[notes], auth[auth];
-            d --> repos[repository];
-        ```
+graph TD
+    M[Modules] --> app
+    M --> core
+    M --> features
+    M --> d[data]
+    
+    core --> common
+    core --> db[database]
+    core --> net[network]
+    core --> domain
+    
+    features --> w[weather]
+    features --> n[notes]
+    features --> auth
+    
+    d --> repos[repository]
+```
