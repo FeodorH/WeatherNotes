@@ -8,6 +8,7 @@
         android:minSdkVersion="21"
         android:targetSdkVersion="34" />
 
+    <!-- Интернет для погоды -->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <permission
@@ -28,7 +29,8 @@
         android:testOnly="true" >
         <activity
             android:name="com.example.weathernotes.MainActivity"
-            android:exported="true" >
+            android:exported="true"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
