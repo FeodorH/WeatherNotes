@@ -27,8 +27,8 @@ Module dependencies:
 ```mermaid
 graph TD
     a[app] --> auth[auth]
-    M --> n[notes]
-    M --> w[weather]
+    a --> n[notes]
+    a --> w[weather]
     
     w --> d[domain]
     
