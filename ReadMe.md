@@ -22,3 +22,17 @@ graph TD
     
     d --> repos[repository]
 ```
+
+Module dependencies:
+```mermaid
+graph TD
+    a[app] --> auth[auth]
+    M --> n[notes]
+    M --> w[weather]
+    
+    w --> d[domain]
+    
+    d --> db[database]
+    d --> net[network]
+    d --> repos[repository]
+```
